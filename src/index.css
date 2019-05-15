@@ -1,3 +1,24 @@
+
+:root{
+--ficgrey:#302625;
+--sjgrey:#71665D;
+--sjgrey2:#585450;
+--sjgrey3:#A8A8A8;
+--sjcream: #EBEBEB;
+--output-c0:#EE9900;
+--output-c1:#EE5A00;
+--output-c2:#FF4449;
+--output-c3:#FF0667;
+--output-c4:#FF06EA;
+--output-c5:#B706FF;
+--output-c6:#8506FF;
+--output-c7:#6A31F7;
+--output-c8:#405CFB;
+--output-c9:#408EFB;
+--output-c10:#40CAFB;
+--output-c11:#40FBE4;
+
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +27,231 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+background-color: var(--sjcream);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+
+.container{
+color: var(--sjcream);
+}
+.headWanger{
+background-color: var(--sjgrey);
+font-family: 'Major Mono Display', monospace;
+font-size: 3em;
+margin-top: 2vh;
+padding-left: 1vw;
+}
+.strap-line{
+background-color: var(--sjgrey);
+margin-top: 2vh;
+font-family: 'Major Mono Display', monospace;
+font-size: 2em;
+padding-left: 1vw;
+}
+.outputList{
+
+background-color: var(--sjgrey);
+}
+.outputList-container{
+  margin-left: 5vh;
+  margin-top: 2vh;
+  padding-top: 4vh;
+  min-height: 70vh;
+
+}
+.outputList-output{
+
+}
+.control-wanger{
+  background-color: var(--sjgrey);
+  margin-top: 2vh;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.2em;
+  padding-left: 1.5vh;
+
+}
+
+.foot-wanger{
+  background-color: var(--sjgrey);
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding-left: 1vw;
+}
+ul{
+  padding-left: 0px;
+}
+ul > li {
+    display: inline-block;
+    /* ie7 fix */
+    zoom:1;
+    *display:inline;
+    margin: 0px;
+    padding-right:8px;
+
+}
+
+a:hover{
+  color: var(--sjcream);
+  text-decoration: none;
+}
+a:active{
+  color: var(--sjcream);
+  text-decoration: none;
+}
+
+.output-c0 {
+  color: var(--output-c0);
+  text-decoration:none;
+
+  border-color: var(--output-c0);
+}
+.output-c1 {
+  color: var(--output-c1);
+  text-decoration:none;
+
+  border-color: var(--output-c1);
+}
+.output-c2{
+  color: var(--output-c2);
+
+  border-color: var(--output-c2);
+}
+.output-c3{
+  color: var(--output-c3);
+
+  border-color: var(--output-c3);
+}
+.output-c4{
+  color: var(--output-c4);
+
+  border-color: var(--output-c4);
+}
+.output-c5{
+  color: var(--output-c5);
+
+  border-color: var(--output-c5);
+}
+.output-c6{
+  color: var(--output-c6);
+
+  border-color: var(--output-c6);
+}
+.output-c7{
+  color: var(--output-c7);border:2px;
+  border-color: var(--output-c7);
+
+}
+.output-c8{
+  color: var(--output-c8);
+
+  border-color: var(--output-c8);
+}
+.output-c9{
+  color: var(--output-c9);
+
+  border-color: var(--output-c9);
+}
+.output-c10{
+  color: var(--output-c10);
+
+  border-color: var(--output-c10);
+}
+.output-c11{
+  color: var(--output-c11);
+
+  border-color: var(--output-c11);
+}
+.outputBox{
+  position: relative;
+  height: 27vh;
+  width:23vh;
+  float: left;
+  padding: 2vh;
+  background: transparent;
+  border-width: 0px;
+
+}
+.colourBox{
+  position: absolute;
+
+  height: 15vh;
+  width:15vh;
+  display: block;
+  border:2px;
+  border-style: solid;
+  transition:
+        height 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        width 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        border 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        border-style 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+
+
+}
+
+ .focusGrow{
+  height: 15vh;
+  width:15vh;
+  border:22px;
+  border-style: dashed;
+  left:-10px;
+  top:20px;
+}
+.thumbHero{
+  position: absolute;
+  left: 0;
+  top:0;
+  height: 15vh;
+  width:15vh;
+  opacity: 1;
+  border:2px;
+  border-style: solid;
+  border-color: var(--sjgrey2);
+}
+.titleHero{
+  position: absolute;
+  left: 0;
+  top:19vh;
+  font-family: 'Staatliches', cursive;
+  color: var(--sjcream);
+  text-decoration: none;
+}
+
+
+
+
+.headWanger a:hover {
+  color: var(--sjcream);
+  text-decoration: none;
+}
+.headWanger a:active{
+  color: var(--sjcream);
+  text-decoration: none;
+}
+.headWanger a:visited {
+  color: var(--sjcream);
+  text-decoration: none;
+}
+.feature-item{
+  margin-top: 2vh;
+  background-color: var(--sjgrey);
+}
+.page-banner{
+
+}
+.pageBody{
+
+  padding: 2vh;
+}
+.feature-item{
+
+}
+.banner-hero{
+width: 100%;
 }
