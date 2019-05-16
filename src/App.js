@@ -25,8 +25,8 @@ class Wopper extends Component{
   }
 
   async componentDidMount(){
-    let typeResponse = await fetch("http://localhost:1337/types");
-    let outputsResponse = await fetch("http://localhost:1337/outputs");
+    let typeResponse = await fetch("http://staging.s-j.io:1337/types");
+    let outputsResponse = await fetch("http://staging.s-j.io:1337/outputs");
 
     if (!outputsResponse.ok) {
       console.log("##outputsResponse = "+outputsResponse);
